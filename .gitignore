@@ -1,0 +1,62 @@
+# ==============================================================================
+# Master .gitignore - Network Engineering & Cybersecurity Compendium
+# ==============================================================================
+
+# Operating System Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+$RECYCLE.BIN/
+
+# Editor & IDE Files
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+*.swp
+*.swo
+*~
+
+# Logs, Dumps & Runtime Artifacts
+*.log
+*.bak
+*.tmp
+*.temp
+
+# Network Packet Captures & Traffic Dumps (Prevent accidental leak of sensitive captures)
+*.pcap
+*.pcapng
+*.cap
+*.etl
+
+# Sensitive Certificates & Cryptographic Keys
+*.pem
+*.key
+*.pfx
+*.p12
+*.jks
+*.kdb
+*.csr
+
+# Diagnostic Logs generated during live execution of tools
+Tools/PingLog_*.csv
+Tools/*.log
+
+# Python Virtual Environments & Cache
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+env/
+venv/
+.pytest_cache/
+
+# Node / Web artifacts (if any)
+node_modules/
+dist/
+build/
