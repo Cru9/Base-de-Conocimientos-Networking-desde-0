@@ -28,6 +28,13 @@ $RECYCLE.BIN/
 *.tmp
 *.temp
 
+# Compressed Archives
+*.rar
+*.zip
+*.7z
+*.tar.gz
+*.tar
+
 # Network Packet Captures & Traffic Dumps (Prevent accidental leak of sensitive captures)
 *.pcap
 *.pcapng
