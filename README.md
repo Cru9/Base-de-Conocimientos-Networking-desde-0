@@ -129,7 +129,6 @@ Cada fabricante incluye 10 niveles progresivos de configuración:
 8. `08` Listas de Control de Acceso (ACLs) y limitación QoS.
 9. `09` Alta disponibilidad de primer salto (HSRP / VRRP) y apilamiento físico.
 10. `10` Mantenimiento, respaldo TFTP, diagnóstico DOM y recuperación de contraseñas.
-- `PLANTILLA_CONFIGURACION_SWITCH.md`: Plantilla corporativa de máxima seguridad (*Hardening Enterprise*).
 
 ---
 

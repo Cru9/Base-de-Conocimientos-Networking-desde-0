@@ -31,7 +31,6 @@ Cada archivo aborda un nivel de complejidad progresivo, explicado paso a paso co
 | **08** | [08 listas de control de acceso acl y qos](./08_listas_de_control_de_acceso_acl_y_qos.md) | Configuración paso a paso y mejores prácticas |
 | **09** | [09 alta disponibilidad vrrp y apilamiento istack](./09_alta_disponibilidad_vrrp_y_apilamiento_istack.md) | Configuración paso a paso y mejores prácticas |
 | **10** | [10 mantenimiento respaldo y resolucion fallas](./10_mantenimiento_respaldo_y_resolucion_fallas.md) | Configuración paso a paso y mejores prácticas |
-| **PLANTILLA** | [PLANTILLA CONFIGURACION SWITCH](./PLANTILLA_CONFIGURACION_SWITCH.md) | Configuración paso a paso y mejores prácticas |
 
 ---
 

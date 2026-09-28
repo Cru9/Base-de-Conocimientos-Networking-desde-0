@@ -13,20 +13,20 @@
 
 ## 📌 Visión General del Módulo de Switching
 
-En la ingeniería de redes corporativas, es fundamental dominar múltiples dialectos de CLI. Este módulo reúne **72 guías técnicas y 6 plantillas maestras de configuración** organizadas por fabricante, permitiendo trasladar conceptos arquitectónicos (VLANs, agregación de enlaces, Spanning Tree, enrutamiento inter-VLAN, seguridad L2 y alta disponibilidad) a la sintaxis exacta de cada conmutador.
+En la ingeniería de redes corporativas, es fundamental dominar múltiples dialectos de CLI. Este módulo reúne **60 guías técnicas** organizadas por fabricante, permitiendo trasladar conceptos arquitectónicos (VLANs, agregación de enlaces, Spanning Tree, enrutamiento inter-VLAN, seguridad L2 y alta disponibilidad) a la sintaxis exacta de cada conmutador.
 
 ---
 
 ## 🏢 Fabricantes Incluidos
 
-| Fabricante | Sistema Operativo | Guía de Inicio | Plantilla de Producción |
-| :--- | :--- | :--- | :--- |
-| **Cisco** | IOS / IOS-XE | [Manual Cisco](./Cisco/README.md) | [Plantilla Hardened](./Cisco/PLANTILLA_CONFIGURACION_SWITCH.md) |
-| **Huawei** | VRP (Versatile Routing Platform) | [Manual Huawei](./Huawei/README.md) | [Plantilla Hardened](./Huawei/PLANTILLA_CONFIGURACION_SWITCH.md) |
-| **Aruba** | ArubaOS-CX / Provision | [Manual Aruba](./Aruba/README.md) | [Plantilla Hardened](./Aruba/PLANTILLA_CONFIGURACION_SWITCH.md) |
-| **HP** | ProCurve / Provision (AOS-S) | [Manual HP](./HP/README.md) | [Plantilla Hardened](./HP/PLANTILLA_CONFIGURACION_SWITCH.md) |
-| **3Com** | Comware OS | [Manual 3Com](./3Com/README.md) | [Plantilla Hardened](./3Com/PLANTILLA_CONFIGURACION_SWITCH.md) |
-| **TP-Link** | JetStream L2/L3 CLI | [Manual TP-Link](./TP-Link/README.md) | [Plantilla Hardened](./TP-Link/PLANTILLA_CONFIGURACION_SWITCH.md) |
+| Fabricante | Sistema Operativo | Guía de Inicio |
+| :--- | :--- | :--- |
+| **Cisco** | IOS / IOS-XE | [Manual Cisco](./Cisco/README.md) |
+| **Huawei** | VRP (Versatile Routing Platform) | [Manual Huawei](./Huawei/README.md) |
+| **Aruba** | ArubaOS-CX / Provision | [Manual Aruba](./Aruba/README.md) |
+| **HP** | ProCurve / Provision (AOS-S) | [Manual HP](./HP/README.md) |
+| **3Com** | Comware OS | [Manual 3Com](./3Com/README.md) |
+| **TP-Link** | JetStream L2/L3 CLI | [Manual TP-Link](./TP-Link/README.md) |
 
 ---
 
