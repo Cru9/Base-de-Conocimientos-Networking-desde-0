@@ -1,0 +1,10 @@
+# Dependencias para Tools_BC - Network Engineering & Cybersecurity Toolkit
+# La mayoria de estas librerias ya son estandar o estan preinstaladas en entornos Python 3.10+
+
+rich>=13.0.0
+netmiko>=4.2.0
+scapy>=2.5.0
+paramiko>=3.0.0
+colorama>=0.4.6
+cryptography>=41.0.0
+requests>=2.31.0
