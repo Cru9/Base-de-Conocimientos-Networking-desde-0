@@ -80,11 +80,17 @@ Al iniciar la aplicación tendrás acceso al panel interactivo:
 
 ---
 
-## 📌 Presentación y Propósito de la Base de Conocimientos EDC
+## 📌 Acerca del Proyecto: Presentación y Propósito de EDC & PyEDC
 
-La **Base de Conocimientos EDC** es un repositorio enciclopédico, riguroso y exhaustivo diseñado para resolver de forma definitiva las necesidades de diseño, despliegue, hardening, diagnóstico y certificación en infraestructuras digitales empresariales e industriales de misión crítica.
+La **Base de Conocimientos EDC (Enterprise Data & Connectivity)** es un ecosistema integral de ingeniería de redes y ciberseguridad que unifica en un solo repositorio dos pilares fundamentales:
 
-Nace a partir de una **auditoría profunda "dato por dato"** realizada sobre los 259 archivos del repositorio maestro, corrigiendo errores sistemáticos de renderizado markdown, tablas rotas, omisión de acentos diacríticos y desactualización de estándares. Integra especificaciones de la **IETF (RFCs activos)**, normas **IEEE / TIA / ISO**, marcos del **NIST** y arquitecturas validadas de los principales fabricantes de la industria (**Cisco, Huawei, Aruba, Fortinet, Palo Alto Networks**).
+1. **📚 Enciclopedia Técnica Maestra (259 Documentos Auditados):**
+   - Cobertura técnica exhaustiva de fundamentos físicos, conmutación L2, enrutamiento L3/WAN/MPLS/SRv6, Data Center Spine-Leaf VXLAN EVPN, ciberseguridad NGFW/Zero Trust, redes inalámbricas Wi-Fi 6/7 y entornos industriales OT/IoT (Modelo Purdue / IEC 62443).
+   - Basado en especificaciones oficiales de la **IETF (RFCs activos)**, normas **IEEE / TIA / ISO**, marcos **NIST** y arquitecturas validadas de los principales fabricantes (**Cisco, Huawei, Aruba, Juniper, Fortinet y Palo Alto Networks**).
+
+2. **⚡ Plataforma de Software Interactiva (PyEDC Engine):**
+   - Una suite modular en Python con **8 motores de cómputo, automatización y certificación**: calculadoras de subnetting/VLSM, presupuesto óptico y MTU/MSS, transpilador CLI multi-marca, diagnóstico guiado con filtros Wireshark, catálogo de 200 laboratorios, simulador de exámenes y un copiloto con IA local (RAG).
+   - **Zero-Friction Onboarding:** Ejecutable en **1 solo clic** sin necesidad de configurar manualmente entornos ni dependencias, con pruebas unitarias validadas mediante **CI/CD en GitHub Actions**.
 
 ---
 
