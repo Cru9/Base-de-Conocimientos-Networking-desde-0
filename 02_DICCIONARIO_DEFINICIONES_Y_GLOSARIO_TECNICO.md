@@ -1,7 +1,7 @@
 # 📖 Diccionario Enciclopédico de Redes y Ciberseguridad EDC
 ## Network Engineering & Cybersecurity Master Compendium
 
-> **DICCIONARIO TÉCNICO DE LA A A LA Z (+160 TÉRMINOS, ESTÁNDARES Y PROTOCOLOS)**  
+> **DICCIONARIO TÉCNICO DE LA A A LA Z (+200 TÉRMINOS, ESTÁNDARES Y PROTOCOLOS COMPLETO A-Z)**  
 > **Ubicación:** `Base de Conocimientos_EDC/02_DICCIONARIO_DEFINICIONES_Y_GLOSARIO_TECNICO.md`  
 > **Criterio Editorial:** Rigor técnico formal, capa OSI/dominio, estándar rector y aplicación operativa real.
 
@@ -130,6 +130,16 @@
 - **Estándar:** IEEE 802.1p (subcampo de IEEE 802.1Q).
 - **Definición:** Campo de 3 bits presente en la etiqueta 802.1Q de las tramas Ethernet troncales que permite definir 8 niveles de prioridad de servicio (de 0 a 7) para diferenciar tráfico de voz, video y datos en la capa de enlace.
 
+#### **CASB (Cloud Access Security Broker)**
+- **Dominio / Capa:** Seguridad en la Nube / Capa 7.
+- **Estándar:** NIST SP 800-145 / Cloud Security Alliance (CSA).
+- **Definición:** Punto de control de políticas de seguridad situado entre los usuarios finales y las aplicaciones en la nube (SaaS, PaaS, IaaS). Aplica directivas de seguridad corporativas mediante cuatro pilares: visibilidad de Shadow IT, cumplimiento normativo, seguridad de datos (DLP para evitar fuga de información confidencial) y protección activa contra malware e intrusiones en cuentas cloud.
+
+#### **C2 / C&C (Command and Control Infrastructure)**
+- **Dominio / Capa:** Ciberseguridad Ofensiva/Defensiva / Capas 4 y 7.
+- **Estándar:** MITRE ATT&CK Tactic TA0011 (Command and Control).
+- **Definición:** Servidores y canales de comunicación centralizados operados por ciberatacantes para mantener comunicación persistente con sistemas infectados (bots, malware, ransomware). Envían comandos de ejecución, descargan módulos adicionales y coordinan la exfiltración masiva de datos utilizando técnicas como DNS Tunneling, HTTPS encubierto y Domain Fronting.
+
 ---
 
 ### D
@@ -174,6 +184,16 @@
 - **Estándar:** ITU-T G.694.1.
 - **Definición:** Tecnología de transporte óptico que multiplexa múltiples señales portadoras ópticas independientes en una sola fibra monomodo utilizando diferentes longitudes de onda en la banda C (1530-1565 nm) con un espaciado estrecho (50 GHz o 100 GHz), alcanzando capacidades superiores a los 32 Terabits por segundo por hilo de fibra.
 
+#### **DDoS (Distributed Denial of Service)**
+- **Dominio / Capa:** Ciberseguridad y Tráfico Anómalo / Capas 3, 4 y 7.
+- **Estándares:** RFC 4732, NIST SP 800-189.
+- **Definición:** Ataque cibernético coordinado originado desde múltiples sistemas comprometidos (botnets) que inundan intencionalmente los recursos computacionales o el ancho de banda del enlace de la víctima hasta provocar indisponibilidad. Se dividen en ataques volumétricos (amplificación NTP/DNS, UDP Flood), de protocolo (SYN Flood, fragmentación) y de aplicación (HTTP GET/POST Flood, Slowloris).
+
+#### **DNSSEC (Domain Name System Security Extensions)**
+- **Dominio / Capa:** Servicios Centrales e Integridad / Capa 7.
+- **Estándares:** RFC 4033, RFC 4034, RFC 4035, RFC 9364.
+- **Definición:** Suite de extensiones de seguridad que autentica criptográficamente el origen de las respuestas DNS y garantiza su integridad mediante firmas digitales (registros RRSIG, DNSKEY, DS y NSEC/NSEC3). Previene de manera concluyente el envenenamiento de caché DNS (DNS Cache Poisoning) y los desvíos fraudulentos de tráfico a nivel de nombres de dominio.
+
 ---
 
 ### E
@@ -205,6 +225,15 @@
 - **Dominio / Capa:** Seguridad en Redes / Capa 3 (Protocolo IP 50).
 - **Estándar:** RFC 4303.
 - **Definición:** Protocolo fundamental del suite IPsec que proporciona confidencialidad de datos (mediante cifrado simétrico), autenticación del origen de datos, verificación de integridad y protección contra ataques de repetición (Anti-Replay).
+
+#### **eBPF (Extended Berkeley Packet Filter)**
+- **Dominio / Capa:** Programabilidad de Núcleo y Redes Cloud-Native / Capas 2 a 7.
+- **Estándar:** IETF BPF Working Group / Linux Kernel Documentation.
+- **Definición:** Tecnología revolucionaria de bajo nivel integrada en el kernel de Linux que permite ejecutar código bytecode seguro y verificado en el espacio del núcleo sin necesidad de modificar el código fuente ni cargar módulos externos. Es la base de motores de redes de contenedores de ultra alto rendimiento, telemetría granular de red (Cilium) y monitorización de seguridad en tiempo de ejecución (Falco).
+
+#### **EDR (Endpoint Detection and Response)**
+- **Dominio / Capa:** Ciberseguridad Defensiva / Capa Host / Endpoint.
+- **Definición:** Solución integrada de seguridad en estaciones de trabajo y servidores que monitoriza continuamente eventos de bajo nivel del sistema operativo (creación de procesos, llamadas de API, conexiones de sockets y modificaciones del registro). Combina análisis heurístico e inteligencia de amenazas para detectar intrusiones sofisticadas en tiempo real y ejecutar respuestas automatizadas (aislamiento del host en la red, detención de procesos).
 
 ---
 
@@ -290,6 +319,18 @@
 - **Dominio / Capa:** Ciberseguridad Industrial OT / Transversal.
 - **Definición:** Serie integral de normas internacionales de ciberseguridad para Sistemas de Automatización y Control Industrial (IACS). Introduce conceptos esenciales como la segmentación por *Zonas y Conductos (Zones and Conduits)* y clasifica los requisitos técnicos en cuatro Niveles de Seguridad (Security Levels: SL 1 a SL 4).
 
+#### **IDS / IPS (Intrusion Detection & Prevention System)**
+- **Dominio / Capa:** Seguridad Perimetral y de Red / Capas 2 a 7.
+- **Estándares:** RFC 4765 (IDMEF), NIST SP 800-94.
+- **Definición:** Tecnologías de inspección de tráfico para identificar actividades sospechosas o infracciones a las políticas de seguridad corporativas:
+  - *IDS (Detección):* Monitoriza pasivamente mediante puertos SPAN/TAP y genera alertas sin intervenir en el flujo de paquetes.
+  - *IPS (Prevención):* Se ubica en línea (*In-Line*) en la ruta física del tráfico, analizando firmas de exploits y anomalías estadísticas para descartar tramas maliciosas y restablecer conexiones TCP mediante paquetes TCP RST en tiempo real.
+
+#### **IGMP (Internet Group Management Protocol)**
+- **Dominio / Capa:** Enrutamiento Multicast / Capa 3.
+- **Estándares:** RFC 1112 (v1), RFC 2236 (v2), RFC 3376 (v3).
+- **Definición:** Protocolo del conjunto de protocolos de Internet utilizado por hosts clientes y enrutadores adyacentes para gestionar la membresía en grupos de multidifusión (Multicast) en redes IPv4. La versión IGMPv3 introduce compatibilidad con multidifusión de origen específico (SSM - Source-Specific Multicast), permitiendo al cliente suscribirse a un flujo multicast restringido únicamente a una IP de origen verificada.
+
 ---
 
 ### J
@@ -302,6 +343,25 @@
 #### **Jumbo Frames**
 - **Dominio / Capa:** Conmutación y Data Center / Capa 2.
 - **Definición:** Tramas Ethernet cuyo tamaño de unidad de transmisión máxima (MTU) supera el estándar histórico de 1500 bytes, típicamente configuradas a 9000 o 9216 bytes. Reducen drásticamente el consumo de CPU en servidores y switches al procesar menos cabeceras por gigabyte transferido en redes de almacenamiento SAN (iSCSI, NFS) y overlays VXLAN.
+
+---
+
+### K
+
+#### **Kerberos**
+- **Dominio / Capa:** Autenticación de Red y Criptografía / Capa 7 (TCP/UDP 88).
+- **Estándar:** RFC 4120.
+- **Definición:** Protocolo de autenticación de red basado en criptografía de clave simétrica que utiliza un Centro de Distribución de Claves (KDC - Key Distribution Center) de confianza. El cliente obtiene un Ticket de Concesión de Tickets (TGT) y posteriormente Tickets de Servicio (ST) para acceder a recursos de red (servidores de archivos, LDAP, bases de datos) sin transmitir jamás contraseñas en texto claro a través del canal de comunicaciones.
+
+#### **KMS (Key Management Service / HSM)**
+- **Dominio / Capa:** Criptografía y Seguridad en Cloud / Capa 7.
+- **Estándares:** FIPS 140-2 / FIPS 140-3, NIST SP 800-57.
+- **Definición:** Servicio centralizado para la creación, rotación, almacenamiento, uso y revocación de claves criptográficas utilizadas para cifrar datos en reposo y en tránsito. En entornos empresariales y de misión crítica, las claves maestras se custodian físicamente dentro de Módulos de Seguridad de Hardware (HSM) certificados resistentes a intrusiones físicas y lógicas.
+
+#### **Kubernetes CNI (Container Network Interface)**
+- **Dominio / Capa:** Redes de Contenedores y Cloud / Capas 2 a 4.
+- **Estándar:** CNCF Container Network Interface Specification.
+- **Definición:** Especificación y biblioteca de estándares que define cómo los motores de orquestación de contenedores (Kubernetes, containerd) configuran interfaces de red y asignan direcciones IP dinámicamente a los Pods al momento de su creación y destrucción. Implementaciones destacadas incluyen Calico (con soporte BGP e IP-in-IP), Cilium (acelerado por eBPF) y Flannel (basado en túneles VXLAN overlay).
 
 ---
 
@@ -356,6 +416,19 @@
 - **Estándares:** RFC 3031, RFC 4364 (BGP/MPLS IP VPNs).
 - **Definición:** Tecnología de conmutación de alto rendimiento en operadores de telecomunicaciones que sustituye la inspección de la cabecera IP en cada enrutador intermedio por la lectura de etiquetas fijas de 20 bits (MPLS Shim Header), permitiendo crear Redes Privadas Virtuales de Capa 3 (L3VPN) totalmente aisladas.
 
+#### **MACsec (Media Access Control Security - IEEE 802.1AE)**
+- **Dominio / Capa:** Seguridad en Enlace de Datos / Capa 2.
+- **Estándar:** IEEE 802.1AE.
+- **Definición:** Estándar de seguridad de Capa 2 que cifra, autentica e inspecciona la integridad de todo el tráfico Ethernet que viaja entre conmutadores o entre host y switch a velocidad de cable (Line-Rate mediante ASICs dedicados). Utiliza el protocolo MKA (MACsec Key Agreement - IEEE 802.1X-2010) para negociar claves de sesión con cifrado AES-GCM-128 o AES-GCM-256, protegiendo enlaces de fibra y cobre frente a espionaje, ataques de Man-in-the-Middle y spoofing de tramas.
+
+#### **MFA (Multi-Factor Authentication)**
+- **Dominio / Capa:** Identidad y Control de Acceso / Capa 7.
+- **Estándares:** NIST SP 800-63B, FIDO2 / W3C WebAuthn, RFC 6238 (TOTP).
+- **Definición:** Mecanismo de autenticación que exige al usuario proporcionar al menos dos factores independientes de validación antes de conceder acceso:
+  1. *Conocimiento:* Algo que sabe (contraseña, PIN).
+  2. *Posesión:* Algo que tiene (token de hardware FIDO2, smartphone con app TOTP, tarjeta inteligente).
+  3. *Inherencia:* Algo que es (biometría: huella dactilar, reconocimiento facial).
+
 ---
 
 ### N
@@ -376,6 +449,18 @@
 #### **NIST SP 800-207**
 - **Dominio / Capa:** Ciberseguridad y Gobernanza.
 - **Definición:** Publicación especial del Instituto Nacional de Estándares y Tecnología de EE.UU. que establece la arquitectura formal de referencia para el modelo de seguridad **Zero Trust (Confianza Cero)**, definiendo los componentes del Motor de Políticas (PE), Administrador de Políticas (PA) y Punto de Cumplimiento de Políticas (PEP).
+
+#### **NAT / CGNAT (Carrier-Grade Network Address Translation)**
+- **Dominio / Capa:** Direccionamiento IP y Transporte Carrier / Capas 3 y 4.
+- **Estándares:** RFC 1631, RFC 3022, RFC 6598 (Prefijo Carrier `100.64.0.0/10`).
+- **Definición:** 
+  - *NAT Tradicional (NAPT / PAT):* Mapeo de múltiples direcciones IP privadas (RFC 1918) a una o más direcciones IP públicas compartidas traduciendo los puertos L4 (TCP/UDP).
+  - *CGNAT (Large Scale NAT - LSN):* Arquitectura masiva desplegada en el núcleo de proveedores de telecomunicaciones (ISPs) que implementa una doble capa de traducción (NAT444) para mitigar el agotamiento global de direcciones IPv4, interconectando miles de hogares a través de bloques de IPs públicas reservadas del operador.
+
+#### **NetFlow / IPFIX (IP Flow Information Export)**
+- **Dominio / Capa:** Telemetría y Monitorización de Tráfico / Capas 3 y 4.
+- **Estándares:** RFC 3954 (Cisco NetFlow v9), RFC 7011 (IPFIX IETF Estándar).
+- **Definición:** Protocolo y arquitectura de telemetría de red que recolecta estadísticas detalladas de flujos de paquetes IP basándose en la coincidencia de campos clave (7-tupla: IP origen, IP destino, Puerto origen, Puerto destino, Protocolo L4, Interfaz de entrada y Tipo de Servicio). Permite auditar patrones de consumo de ancho de banda, detectar anomalías de tráfico y reconstruir incidentes de ciberseguridad.
 
 ---
 
@@ -412,6 +497,21 @@
   - *Nivel 3:* Operaciones de manufactura y gestión de planta (Servidores SCADA, Historian).
   - *Nivel 3.5 (IDMZ):* Zona Desmilitarizada Industrial que aísla físicamente OT de IT.
   - *Nivel 4 / 5:* Red corporativa empresarial y servicios de nube (ERP, correo, internet).
+
+#### **PAM (Privileged Access Management)**
+- **Dominio / Capa:** Ciberseguridad e Identidad / Capa 7.
+- **Estándar:** NIST SP 800-53 (AC-6 Least Privilege).
+- **Definición:** Estrategia integral y conjunto de tecnologías para gobernar, aislar, auditar y rotar automáticamente las credenciales de cuentas de acceso privilegiado con altos privilegios administrativos (cuentas `root`, `administrator`, consolas de routers y firewalls). Implementa bóvedas seguras de contraseñas (*vaults*), sesiones SSH/RDP grabadas en video y concesión de accesos bajo demanda (Just-in-Time - JIT).
+
+#### **PKI (Public Key Infrastructure)**
+- **Dominio / Capa:** Criptografía y Confianza Digital / Capas 6 y 7.
+- **Estándar:** RFC 5280 (X.509 v3).
+- **Definición:** Marco integral compuesto por hardware, software, políticas y procedimientos requeridos para crear, gestionar, distribuir, usar, almacenar y revocar certificados digitales de clave pública. Sus componentes clave son la Autoridad Certificadora (CA), la Autoridad de Registro (RA), la Lista de Revocación de Certificados (CRL) y el protocolo de estado de certificados en línea (OCSP).
+
+#### **PoE / PoE+ / PoE++ (Power over Ethernet)**
+- **Dominio / Capa:** Infraestructura de Conmutación y Cableado / Capa 1.
+- **Estándares:** IEEE 802.3af (PoE - 15.4 W), IEEE 802.3at (PoE+ - 30 W), IEEE 802.3bt (PoE++ Type 3 / 4 - 60 W a 90 W).
+- **Definición:** Tecnología que permite a los conmutadores de red suministrar energía eléctrica continua y datos digitales simultáneamente a través de los mismos conductores de cobre de pares trenzados (Cat 5e/Cat 6) a dispositivos finales alimentados (PD - Powered Devices), como Puntos de Acceso Wi-Fi 6/7, teléfonos IP, cámaras PTZ y sensores industriales IoT.
 
 ---
 
@@ -466,6 +566,27 @@
 - **Dominio / Capa:** Conmutación Multicapa / Capa 3.
 - **Definición:** Interfaz lógica enrutada configurada en un switch de Capa 3 asociada directamente a una VLAN específica (ej. `interface Vlan 10`). Actúa como la puerta de enlace predeterminada (Default Gateway) para todos los hosts ubicados en dicha VLAN, posibilitando el enrutamiento inter-VLAN local a velocidad de cable (Line-Rate).
 
+#### **SASE (Secure Access Service Edge)**
+- **Dominio / Capa:** Arquitectura Convergente de Red y Seguridad / Transversal.
+- **Definición:** Marco arquitectónico acuñado por Gartner que unifica servicios integrales de conectividad de red de área amplia (SD-WAN) con capacidades avanzadas de seguridad en la nube (Security Service Edge - SSE: CASB, ZTNA, SWG y FWaaS) entregados como un servicio de suscripción distribuido globalmente en el borde (Edge), optimizado para fuerzas de trabajo remotas y arquitecturas multi-cloud.
+
+#### **SD-WAN (Software-Defined Wide Area Network)**
+- **Dominio / Capa:** Enrutamiento WAN y Control Centralizado / Capas 3 y 4.
+- **Definición:** Arquitectura WAN que desacopla el plano de control del plano de reenvío de datos en enrutadores de sucursales mediante un orquestador centralizado. Utiliza múltiples enlaces físicos de transporte (MPLS, Internet de banda ancha, LTE/5G) creando túneles overlay cifrados con IPsec y seleccionando dinámicamente el mejor camino en tiempo real basándose en métricas activas de latencia, jitter y pérdida de paquetes.
+
+#### **SIEM (Security Information and Event Management)**
+- **Dominio / Capa:** Monitorización de Seguridad y Cumplimiento / Capa 7.
+- **Definición:** Plataforma centralizada de ciberseguridad que recolecta, agrega, normaliza y correlaciona registros de eventos (logs) procedentes de servidores, firewalls, conmutadores, sistemas de autenticación y aplicaciones en tiempo real. Utiliza reglas de correlación e inteligencia de amenazas para identificar indicios tempranos de intrusiones, generar incidentes en el SOC y garantizar el cumplimiento regulatorio (PCI-DSS, ISO 27001).
+
+#### **SOAR (Security Orchestration, Automation, and Response)**
+- **Dominio / Capa:** Operaciones de Ciberseguridad (SOC) / Capa 7.
+- **Definición:** Solución tecnológica que permite a las organizaciones de seguridad orquestar y automatizar flujos de trabajo de respuesta ante incidentes mediante libros de jugadas digitales (*playbooks*). Integra herramientas de telemetría (SIEM, EDR, firewalls) para responder automáticamente a amenazas de forma inmediata (bloqueo de IP en el perímetro, aislamiento de host comprometido, revocación de credenciales) sin intervención humana obligatoria en las etapas iniciales.
+
+#### **SNMPv3 (Simple Network Management Protocol Version 3)**
+- **Dominio / Capa:** Monitorización y Gestión de Red / Capa 7 (UDP 161/162).
+- **Estándares:** RFC 3411, RFC 3414 (USM), RFC 3415 (VACM).
+- **Definición:** Versión segura del protocolo de gestión SNMP que subsana las graves vulnerabilidades de texto plano de las versiones anteriores (SNMPv1 y v2c que usaban cadenas de comunidad sin cifrado). Introduce autenticación criptográfica de mensajes (SHA-256 / HMAC) y confidencialidad mediante cifrado simétrico de la carga útil (AES-128 / AES-256), además de un control de acceso basado en vistas (VACM).
+
 ---
 
 ### T
@@ -482,6 +603,32 @@
 #### **TIA-568-D**
 - **Dominio / Capa:** Infraestructura Física de Cableado / Capa 1.
 - **Definición:** Conjunto de normas técnicas de telecomunicaciones emitidas por la Telecommunications Industry Association (TIA) que define los estándares de diseño, instalación, prueba y categorías de rendimiento para sistemas de cableado estructurado comercial de cobre y fibra óptica.
+
+#### **TLS 1.3 (Transport Layer Security Version 1.3)**
+- **Dominio / Capa:** Criptografía de Transporte / Capa 4 a 6.
+- **Estándar:** RFC 8446.
+- **Definición:** La versión más moderna, rápida y segura del protocolo criptográfico estándar de Internet. Elimina por completo algoritmos y funciones obsoletas e inseguras (como SHA-1, MD5, RC4, DES y 3DES), prohíbe el intercambio de claves RSA estático obligando el uso de Perfect Forward Secrecy (Diffie-Hellman efímero), y reduce el protocolo de enlace (Handshake) de dos saltos de ida y vuelta (2-RTT) a tan solo uno (1-RTT), soportando reanudación inmediata de sesión en 0-RTT.
+
+---
+
+### U
+
+#### **UDP (User Datagram Protocol)**
+- **Dominio / Capa:** Transporte / Capa 4.
+- **Estándar:** RFC 768.
+- **Definición:** Protocolo de capa de transporte simple, no orientado a conexión y sin confirmación de entrega (*best-effort*). Su cabecera fija de únicamente 8 bytes (puerto origen, puerto destino, longitud y checksum) genera una sobrecarga mínima, convirtiéndolo en el transporte idóneo para transmisiones en tiempo real sensibles al retardo (telefonía VoIP, streaming de video), protocolos de resolución rápida (DNS, NTP, SNMP) y encapsulamiento de redes overlay modernas (VXLAN, QUIC, WireGuard).
+
+#### **UPF (User Plane Function)**
+- **Dominio / Capa:** Telecomunicaciones Móviles / Núcleo 5G Standalone (3GPP).
+- **Estándar:** 3GPP TS 23.501, TS 29.244.
+- **Definición:** Componente central del plano de datos en la arquitectura del núcleo 5G (5G Core). Se encarga del enrutamiento y reenvío de paquetes a ultra alta velocidad entre la red de acceso de radio (gNodeB / RAN) y las redes de datos de datos externas (Internet o redes corporativas privadas), aplicando políticas de inspección de paquetes, control de flujo y calidad de servicio (QoS) en el borde distribuido (MEC - Multi-Access Edge Computing).
+
+#### **UTP / STP / FTP (Unshielded / Shielded Twisted Pair)**
+- **Dominio / Capa:** Medios de Transmisión Físicos / Capa 1.
+- **Estándares:** ANSI/TIA-568-D, ISO/IEC 11801.
+- **Definición:** Tipos de construcción de cables de pares de cobre trenzados balanceados:
+  - *UTP (Unshielded Twisted Pair):* Pares trenzados sin apantallamiento metálico individual ni global, de bajo costo y fácil instalación en oficinas comerciales.
+  - *STP / F/UTP / S/FTP (Shielded Twisted Pair):* Incorpora blindajes de lámina de aluminio o malla de cobre trenzada alrededor de cada par o del conjunto exterior del cable. Minimiza drásticamente la diafonía foránea (*Alien Crosstalk*) y la interferencia electromagnética (EMI) en entornos industriales y centros de datos de alta densidad (10GBase-T y Cat 6A / Cat 7 / Cat 8).
 
 ---
 
@@ -511,6 +658,15 @@
 - **Estándar:** RFC 7348.
 - **Definición:** Tecnología de virtualización de red que encapsula tramas completas de Capa 2 (Ethernet) dentro de datagramas IP/UDP de Capa 4 (Mac-in-UDP). Incorpora un identificador de red (VNI - VXLAN Network Identifier) de 24 bits que expande el límite de segmentación de las 4,094 VLANs tradicionales a más de 16 millones de segmentos virtuales.
 
+#### **VNI (VXLAN Network Identifier)**
+- **Dominio / Capa:** Data Center Overlays / Capa 2 a 4.
+- **Estándar:** RFC 7348.
+- **Definición:** Campo numérico de 24 bits presente en la cabecera VXLAN que identifica de manera unívoca a un segmento de red virtual o dominio de difusión independiente dentro de la red overlay. Permite crear hasta 16,777,216 segmentos de Capa 2 aislados simultáneamente sobre una única infraestructura IP física (underlay), superando el techo histórico de 4094 VLANs de la norma 802.1Q.
+
+#### **VPC / VNet (Virtual Private Cloud / Virtual Network)**
+- **Dominio / Capa:** Computación en la Nube y Redes Virtuales / Capas 2 y 3.
+- **Definición:** Red virtual privada y aislada lógicamente dentro de un proveedor de servicios en la nube pública (VPC en AWS / Google Cloud, VNet en Microsoft Azure). Proporciona control total sobre la topología de red virtual, incluyendo asignación de bloques CIDR privados, subredes públicas y privadas, tablas de enrutamiento personalizadas, puertas de enlace a Internet (IGW / NAT Gateway) y grupos de seguridad perimetrales (Security Groups).
+
 ---
 
 ### W
@@ -529,6 +685,48 @@
 - **Dominio / Capa:** Gestión de Congestión QoS / Capa 3.
 - **Definición:** Mecanismo de prevención de congestión que descarta paquetes TCP aleatoriamente antes de que las colas de hardware del router se saturen por completo. Al descartar selectivamente paquetes basados en su valor IP Precedence o DSCP, fuerza a los emisores TCP a reducir su ventana de congestión gradualmente, evitando el fenómeno catastrófico de sincronización global de flujos TCP.
 
+#### **WAF (Web Application Firewall)**
+- **Dominio / Capa:** Seguridad Web de Capa de Aplicación / Capa 7.
+- **Estándar:** OWASP Top 10 Guidelines, PCI-DSS Requirement 6.6.
+- **Definición:** Dispositivo de seguridad especializado o servicio proxy inverso diseñado para proteger servidores y servicios web inspeccionando y filtrando el tráfico HTTP/HTTPS bidireccional. A diferencia de los firewalls de red tradicionales, un WAF analiza la carga útil de las peticiones a nivel semántico para detectar y mitigar ataques dirigidos a vulnerabilidades de código web, tales como inyecciones SQL (SQLi), Cross-Site Scripting (XSS), falsificación de solicitudes en sitios cruzados (CSRF) e inclusión indebida de archivos remotos.
+
+---
+
+### X
+
+#### **X.509 (Certificados Digitales de Clave Pública)**
+- **Dominio / Capa:** Criptografía y Confianza / Capas 6 y 7.
+- **Estándar:** ITU-T Recommendation X.509 / IETF RFC 5280.
+- **Definición:** Estándar internacional que define el formato estricto de los certificados de clave pública utilizados en arquitecturas PKI. Un certificado X.509 v3 vincula una identidad demostrada (nombre común, nombre de dominio o empresa) a una clave criptográfica pública, validada mediante la firma digital de una Autoridad Certificadora (CA) de confianza y sellos de caducidad e información de extensiones (como SAN - Subject Alternative Name).
+
+#### **XDR (Extended Detection and Response)**
+- **Dominio / Capa:** Ciberseguridad Defensiva y SOC / Transversal.
+- **Definición:** Plataforma unificada de detección de amenazas y respuesta automatizada que recolecta, correlaciona y analiza telemetría nativa procedente de múltiples capas de la infraestructura: endpoints (EDR), redes (NDR), servidores de correo electrónico, identidades de usuario (IAM) y entornos de nube híbrida. Proporciona una visibilidad integral contextualizada de los incidentes, acelerando el triaje forense y mitigando ataques complejos de múltiples fases.
+
+#### **XGS-PON (10-Gigabit Symmetric Passive Optical Network)**
+- **Dominio / Capa:** Telecomunicaciones Carrier / Capas 1 y 2.
+- **Estándar:** ITU-T G.9807.1.
+- **Definición:** Estándar de acceso de telecomunicaciones sobre fibra óptica punto a multipunto (PON) que entrega un ancho de banda simétrico de 10 Gbps tanto en sentido descendente (1577 nm) como en sentido ascendente (1270 nm). Puede coexistir pacíficamente en la misma planta externa de fibra óptica física con sistemas GPON heredados mediante multiplexación por división de longitud de onda (WDM).
+
+#### **XML / XPath (Modelado y Filtrado NETCONF)**
+- **Dominio / Capa:** Automatización de Redes / Capa 7.
+- **Estándares:** W3C Recommendation / RFC 6241.
+- **Definición:** Lenguaje de marcado estructurado y lenguaje de expresiones de consulta utilizado por el protocolo NETCONF para transportar y consultar el estado operativo y configuraciones jerárquicas de equipos de telecomunicaciones. Permite seleccionar nodos o ramas de configuración específicas de un conmutador o enrutador con precisión quirúrgica mediante expresiones XPath.
+
+---
+
+### Y
+
+#### **YANG (Yet Another Next Generation Data Modeling)**
+- **Dominio / Capa:** Automatización y Modelado de Redes / Capa 7.
+- **Estándares:** RFC 6020 (YANG 1.0), RFC 7950 (YANG 1.1).
+- **Definición:** Lenguaje formal de modelado de datos utilizado para describir de forma unificada e inequívoca las configuraciones de red, las notificaciones de eventos y el estado operativo de los equipos de telecomunicaciones gestionados mediante NETCONF y RESTCONF. Define estructuras jerárquicas de datos tipadas (árboles de nodos `container`, `leaf`, `list`), diferenciando modelos de fabricantes de modelos abiertos independientes como OpenConfig.
+
+#### **Y.1564 (ITU-T Ethernet Service Activation Methodology)**
+- **Dominio / Capa:** Metodología de Pruebas y Certificación de Red / Capas 2 y 3.
+- **Estándar:** Recomendación ITU-T Y.1564 (comercialmente conocida como EtherSAM).
+- **Definición:** Estándar de la industria de telecomunicaciones para la validación y certificación de la puesta en servicio de circuitos Carrier Ethernet. A diferencia del estándar histórico RFC 2544 (que probaba una única métrica secuencialmente sin simular tráfico multi-servicio), Y.1564 valida de forma continua y simultánea múltiples flujos de tráfico con diferentes SLAs, midiendo cuatro Parámetros de Aceptación de Servicio (SAC): tasa de información comprometida (CIR), retardo de transferencia de tramas (FTD / Latencia), variación de retardo (FDV / Jitter) y tasa de pérdida de tramas (FLR).
+
 ---
 
 ### Z
@@ -537,3 +735,12 @@
 - **Dominio / Capa:** Paradigma de Seguridad Integral.
 - **Estándar:** NIST SP 800-207.
 - **Definición:** Estrategia integral de ciberseguridad basada en la premisa fundamental de que no existe una confianza implícita concedida a los activos o usuarios en función exclusiva de su ubicación física o propiedad de red. Exige que cada solicitud de acceso sea explícitamente autenticada, rigurosamente autorizada bajo el principio de privilegio mínimo y continuamente cifrada y validada antes de conceder acceso a los datos.
+
+#### **ZTNA (Zero Trust Network Access)**
+- **Dominio / Capa:** Ciberseguridad de Acceso Remoto / Capas 4 a 7.
+- **Estándar:** Modelo Gartner / NIST SP 800-207.
+- **Definición:** Tecnología de acceso remoto seguro que sustituye a las VPNs corporativas heredadas. En lugar de conceder acceso indiscriminado a todo un segmento de red local tras la autenticación, ZTNA crea un túnel microsegmentado cifrado exclusivo y efímero entre el usuario autenticado y una única aplicación autorizada (*Dark Cloud*), validando continuamente la identidad, el contexto del dispositivo y su postura de seguridad antes de permitir cualquier transacción.
+
+#### **ZTP (Zero Touch Provisioning)**
+- **Dominio / Capa:** NetDevOps y Aprovisionamiento Automatizado / Capas 3 a 7.
+- **Definición:** Función de inicialización automática en conmutadores y enrutadores de red que permite instalar un equipo nuevo de fábrica ("out of the box") sin necesidad de configurar previamente parámetros por consola serie. Al encenderse y conectarse a la red, el equipo solicita una dirección IP por DHCP, descubre la ubicación del servidor de aprovisionamiento mediante opciones DHCP (ej. Opción 66/67 o 43), descarga su imagen de software (firmware) y su archivo de configuración final, reiniciándose listo para operar en producción.
