@@ -1,11 +1,79 @@
+<p align="center">
+  <img src="docs/assets/banner.png" alt="Enterprise Data & Connectivity Architecture" width="100%" />
+</p>
+
 # 🏛️ Base de Conocimientos EDC (Enterprise Data & Connectivity)
 ## Network Engineering & Cybersecurity Master Compendium
 
 <p align="center">
   <img src="https://img.shields.io/badge/Versión-2026.1_LTS-blue?style=for-the-badge" alt="Versión LTS" />
-  <img src="https://img.shields.io/badge/Estándar-ISO%20%7C%20IETF%20%7C%20IEEE%20%7C%20NIST-darkgreen?style=for-the-badge" alt="Estándares" />
+  <img src="https://img.shields.io/badge/Python-3.10%2B-blue?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
+  <img src="https://img.shields.io/badge/PyEDC-Suite%20Interactiva-orange?style=for-the-badge" alt="PyEDC" />
+  <img src="https://img.shields.io/badge/CI%2FCD-GitHub%20Actions-darkgreen?style=for-the-badge&logo=githubactions&logoColor=white" alt="CI/CD" />
+  <img src="https://img.shields.io/badge/Licencia-MIT-green?style=for-the-badge" alt="Licencia" />
   <img src="https://img.shields.io/badge/Alineación-Cisco%20%7C%20Huawei%20%7C%20CompTIA%20%7C%20Fortinet-red?style=for-the-badge" alt="Certificaciones" />
   <img src="https://img.shields.io/badge/Documentación-Enciclopédica%20y%20Técnica-purple?style=for-the-badge" alt="Documentación" />
+</p>
+
+---
+
+## 🚀 Inicio Rápido en 1 Clic (Suite Interactiva PyEDC)
+
+Este repositorio no solo contiene documentación enciclopédica: **incluye una suite de ingeniería y ciberseguridad interactiva en Python (`PyEDC`)** con 8 motores funcionales (calculadoras, transpilador multi-marca, diagnóstico guiado, simulador de exámenes y copiloto con IA).
+
+<p align="center">
+  <img src="docs/assets/pyedc_menu.svg" alt="Panel de Control PyEDC" width="100%" />
+</p>
+
+> [!TIP]
+> **¿No sabes cómo crear entornos virtuales (`.venv`) ni usar `pip`? ¡No te preocupes!**
+> El repositorio incluye lanzadores automáticos que configuran todo por ti en segundos.
+
+### 🖱️ Opción 1: En Windows con 1 Clic (Recomendado para principiantes)
+Solo haz **doble clic** sobre el archivo:
+📁 **`iniciar.bat`**
+
+*Automáticamente creará el entorno virtual `.venv`, instalará las dependencias necesarias de forma silenciosa y abrirá la aplicación.*
+
+---
+
+### ⚡ Opción 2: Desde PowerShell (Windows)
+Abre tu terminal en la carpeta del proyecto y ejecuta:
+```powershell
+.\iniciar.ps1
+```
+
+---
+
+### 💻 Opción 3: Cualquier Sistema Operativo (Linux, macOS, Windows)
+Si tienes Python instalado, solo abre una terminal y escribe:
+```bash
+python run.py
+```
+*(El script `run.py` detecta si faltan librerías o si el entorno virtual no existe, configurándolo todo automáticamente al instante).*
+
+---
+
+### 🎮 Los 8 Módulos de la Suite PyEDC
+
+Al iniciar la aplicación tendrás acceso al panel interactivo:
+
+| Módulo | Capacidades y Funcionalidades |
+| :--- | :--- |
+| **1. 🧮 Calculadora & Diseñador** | Subnetting IPv4/IPv6, VLSM paso a paso, MTU/MSS WAN & VPN, Presupuesto Óptico (dB) y Arquitectura Spine-Leaf Clos para Data Centers. |
+| **2. ⚙️ Automatizador Multi-Vendor** | Transpilador de comandos CLI (Cisco IOS-XE, Huawei VRP, ArubaOS-CX, Juniper JunOS), Generador Jinja2 y Auditor de puertos IANA. |
+| **3. 📖 Glosario & Flashcards** | Diccionario técnico A-Z (+200 términos y estándares) y tarjetas interactivas de estudio activo para certificación. |
+| **4. 🩺 Diagnóstico & Troubleshooting** | Asistente de resolución guiada para 7 anomalías críticas (Loops L2, flappings OSPF/BGP, túneles IPsec caídos, Rogue DHCP, Jitter VoIP, etc.) con filtros Wireshark y comandos CLI. |
+| **5. 📜 Biblioteca de Estándares** | Catálogo oficial de RFCs de la IETF y normas IEEE/TIA/NIST con enlaces web directos a los documentos originales. |
+| **6. 🧪 Banco de Laboratorios (200)** | Catálogo de prácticas clasificadas por examen (CCNA, CCNP, HCIP, Security+) y software de emulación (EVE-NG, GNS3, CML). |
+| **7. 📝 Simulador de Exámenes** | Modo de práctica interactivo y modo examen cronometrado con evaluación de puntaje y explicaciones técnicas inmediatas. |
+| **8. 🤖 Copiloto IA / RAG Local** | Motor de consulta y búsqueda semántica sobre los 259 archivos del repositorio para resolver dudas con citas exactas. |
+
+#### 📸 Capturas en Vivo de la Suite (Rich Terminal Engine)
+
+<p align="center">
+  <img src="docs/assets/pyedc_subnet.svg" alt="Calculadora de Subnetting IPv4" width="49%" />
+  <img src="docs/assets/pyedc_transpiler.svg" alt="Transpilador Multi-Vendor CLI" width="49%" />
 </p>
 
 ---
@@ -18,10 +86,26 @@ Nace a partir de una **auditoría profunda "dato por dato"** realizada sobre los
 
 ---
 
-## 🧭 Mapa de Navegación de la Carpeta Maestra
+## 🧭 Mapa de Navegación del Repositorio
 
 ```text
 Base de Conocimientos_EDC/
+├── .github/workflows/tests.yml                        <- 🟢 CI/CD: Validación automática de pruebas unitarias
+├── docs/assets/                                       <- 🖼️ Recursos visuales, capturas y diagramas de la suite
+│   ├── banner.png                                     <- Hero banner con topología Spine-Leaf y centro de datos
+│   ├── pyedc_menu.svg                                 <- Captura vectorial interactiva del menú principal
+│   ├── pyedc_subnet.svg                               <- Captura vectorial de la calculadora de subredes
+│   └── pyedc_transpiler.svg                           <- Captura vectorial del transpilador multi-vendor
+├── iniciar.bat                                        <- 🚀 Lanzador automático en 1 clic para Windows (.venv + dependencias)
+├── iniciar.ps1                                        <- ⚡ Lanzador automático para PowerShell
+├── run.py                                             <- 💻 Lanzador multiplataforma auto-configurable
+├── requirements.txt                                   <- Dependencias del ecosistema Python (rich, jinja2, etc.)
+├── pyedc/                                             <- 🧠 Plataforma Interactiva Modular en Python
+│   ├── cli.py                                         <- Menú principal interactivo en terminal (Rich UI)
+│   ├── modules/                                       <- Los 8 motores técnicos (calculadoras, labs, exámenes, copiloto...)
+│   └── data/                                          <- Base de datos JSON de preguntas, laboratorios y glosario
+├── tests/                                             <- 🧪 Suite de pruebas unitarias automatizadas (14 tests)
+├── LICENSE                                            <- 📜 Licencia de código abierto MIT
 ├── README.md                                          <- Portal Maestro y Guía de Navegación (Este archivo)
 ├── 00_AUDITORIA_Y_DIAGNOSTICO_COMPLETO_PROYECTO.md    <- Evaluación analítica dato por dato de los 22 pilares originales
 ├── 01_ARQUITECTURA_Y_MAPA_GLOBAL_EDC.md               <- Ontología técnica, Grafo de Conocimiento y Flujo End-to-End
