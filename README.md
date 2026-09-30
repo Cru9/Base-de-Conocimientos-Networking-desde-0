@@ -1,5 +1,7 @@
 <p align="center">
-  <img src="docs/assets/banner.png" alt="Enterprise Data & Connectivity Architecture" width="100%" />
+  <a href="https://github.com/Cru9/Base-de-Conocimientos-Networking-desde-0">
+    <img src="docs/assets/banner.png" alt="Enterprise Data & Connectivity Architecture" width="100%" />
+  </a>
 </p>
 
 # 🏛️ Base de Conocimientos EDC (Enterprise Data & Connectivity)
